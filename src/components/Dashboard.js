@@ -14,20 +14,20 @@ function Dashboard() {
             <li >
               <a
                 href="/"
-                class="mr-2 text-4xl  rounded-md text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600 bg-light-blue"
+                class="mr-2 text-4xl  rounded-md text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
                 >Home</a
               >
             </li>
             <li>
               <a
                 href="/mealplan"
-                class="mr-2 text-4xl rounded-md text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600 bg-light-blue"
+                class="mr-2 text-4xl rounded-md text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600e"
                 >Dining Dollars</a
               >
             </li>
             <a
                 href="/realmoney"
-                class="mr-2 text-4xl  rounded-md text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600 bg-light-blue"
+                class="mr-2 text-4xl  rounded-md text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
                 >Money/Receipts</a
               >
           </ol>
