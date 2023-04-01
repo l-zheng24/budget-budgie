@@ -12,9 +12,10 @@ module.exports = {
       'celadon': '#b9d8c2',
       'light-blue': '#9ac2c9',
       'cadet-grey': '#8aa1b1',
-      'sunglow': '#ffcb47',
+      'sunglow': '#FFE483',
       'cosmicLatte': '#FFFBEC',
-      
+      'office-green': '#0c7800',
+
     
     },},
     

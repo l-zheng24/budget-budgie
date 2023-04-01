@@ -82,7 +82,7 @@ function Login() {
               Budget Budgie
             </h2>
                 <img
-                  class="mx-auto h-[10rem] w-auto"
+                  class="mx-auto h-2/3 w-2/3"
                   src = {require('../budgie.png')} height={500} width={500}
                   alt = "Your Company"
                 />
@@ -105,7 +105,7 @@ function Login() {
                       value = {inputs.username || ""}
                       required
                       onChange={handleChange}
-                      className="relative block w-full rounded-t-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      className="p-3 relative block w-full rounded-t-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                       placeholder="Username"
                     />
                   </div>
@@ -120,7 +120,7 @@ function Login() {
                       value = {inputs.password || ""}
                       required
                       onChange={handleChange}
-                      className="relative block w-full rounded-b-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      className="p-3 relative block w-full rounded-b-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                       placeholder="Password"
                     />
                   </div>
