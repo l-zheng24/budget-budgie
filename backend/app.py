@@ -1,15 +1,29 @@
-from flask import Flask
+from flask import Flask, request
+from flask_cors import CORS
 import cbordScraper
 
 app = Flask(__name__)
 
-
-@app.route('/')
+@app.route('/', methods = ['GET','POST'])
 def getInformation():
 
-    username = ''
-    password = ''
+    if request.data and request.method == 'POST':
+        data = request.data
+        username = data[0]
+        password = data[1]
+        print(data)
+        return "Success"
+        # return cbordScraper.obtain_info(username, password)
+    else: return "Failed"
+    # 
 
-    return cbordScraper.obtain_info(username, password)
+cors = CORS(app, resources={'/*':{'origins': 'http://localhost:3000'}})
 
+@app.after_request
+def after_request(response):
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization,true')
+    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
+    return response
 
+if __name__ == "__main__":
+    app.run()

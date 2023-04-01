@@ -13,22 +13,22 @@ function Dashboard() {
             </li>
             <li >
               <a
-                href="#"
+                href="/"
                 class="mr-2 text-4xl  rounded-md text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600 bg-light-blue"
                 >Home</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="/mealplan"
                 class="mr-2 text-4xl rounded-md text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600 bg-light-blue"
                 >Dining Dollars</a
               >
             </li>
             <a
-                href="#"
+                href="/realmoney"
                 class="mr-2 text-4xl  rounded-md text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600 bg-light-blue"
-                >Dining Dollars</a
+                >Money/Receipts</a
               >
           </ol>
         </nav>
