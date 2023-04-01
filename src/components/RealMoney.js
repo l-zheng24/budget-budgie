@@ -72,7 +72,7 @@ function RealMoney() {
     </div>
     <div>
     <div
-    class="block max-w-sm rounded-l p-6 shadow-lg dark:bg-neutral-700">
+    class="block max-w-sm rounded-lg bg-white p-6 shadow-lg dark:bg-neutral-700">
     <h5
       class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
       Budget

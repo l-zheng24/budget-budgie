@@ -4,7 +4,7 @@ import { Progress } from "@material-tailwind/react"
 function Dashboard() {
     return (
       <React.Fragment>
-      <section>
+      <section class="bg-slate-100">
         
         <nav class="bg-celadon w-full h-20 rounded-md">
           <ol class="list-reset flex space-x-16 pt-3">
@@ -14,21 +14,34 @@ function Dashboard() {
             <li >
               <a
                 href="/"
+<<<<<<< Updated upstream
                 class="mr-2 text-4xl  rounded-md text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
+=======
+                class="mr-2 text-4xl  rounded-md text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600 bg-light-blue"
+>>>>>>> Stashed changes
                 >Home</a
               >
             </li>
             <li>
               <a
                 href="/mealplan"
+<<<<<<< Updated upstream
                 class="mr-2 text-4xl rounded-md text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600e"
+=======
+                class="mr-2 text-4xl rounded-md text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600 bg-light-blue"
+>>>>>>> Stashed changes
                 >Dining Dollars</a
               >
             </li>
             <a
                 href="/realmoney"
+<<<<<<< Updated upstream
                 class="mr-2 text-4xl  rounded-md text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600"
                 >Money/Receipts</a
+=======
+                class="mr-2 text-4xl  rounded-md text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600 bg-light-blue"
+                >Dining Dollars</a
+>>>>>>> Stashed changes
               >
           </ol>
         </nav>
@@ -66,7 +79,7 @@ function Dashboard() {
           
             <div class="flex justify-center pt-20 ">
               <div
-                class="flex flex-col rounded-lg bg-white shadow-lg dark:bg-dark-green w-5/6 h-4/5 flex ">
+                class=" flex-col rounded-lg bg-white shadow-lg dark:bg-dark-green w-5/6 h-4/5 flex ">
                 <div class="flex flex-col justify-start p-6">
                   <h5
                     class="mb-2 text-4xl font-medium text-dark-green  bg-sunglow rounded-md">

@@ -74,6 +74,7 @@ function Login() {
   // };
 
     return (
+<<<<<<< Updated upstream
         <body className="min-h-screen bg-gradient-to-b from-green-500 to-gray-300">
         <div className="flex min-h-full items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
             <div className="w-full max-w-md space-y-8">
@@ -88,6 +89,22 @@ function Login() {
                 />
                 <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
                   Sign in to your account
+=======
+        <body class="min-h-screen bg-slate-100">
+        <div class="flex min-h-full items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
+            <div class="w-full max-w-md space-y-8">
+              <div>
+              <h2 class="text-dark-green font-extrabold text-center text-3xl">
+              Budget Budgie
+            </h2>
+                <img
+                  class="mx-auto h-[10rem] w-auto"
+                  src = {require('../budgie.png')} height={500} width={500}
+                  alt = "Your Company"
+                />
+                <h2 class="mt-6 text-center text-3xl font-bold tracking-tight text-dark-green">
+                  Sign in to your W&M account
+>>>>>>> Stashed changes
                 </h2>
                 
               </div>
@@ -104,9 +121,14 @@ function Login() {
                       type="text"
                       value = {inputs.username || ""}
                       required
+<<<<<<< Updated upstream
                       onChange={handleChange}
                       className="relative block w-full rounded-t-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                       placeholder="Username"
+=======
+                      class="relative block w-full rounded-t-md border-0 py-1.5 text-dark-green ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:z-10 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      placeholder="Email address"
+>>>>>>> Stashed changes
                     />
                   </div>
                   <div>
@@ -128,12 +150,19 @@ function Login() {
                 <div>
                   <button
                     type="submit"
+<<<<<<< Updated upstream
                     className="group relative flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     onClick={getData}
 
                   >
                     <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                       <LockClosedIcon className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" aria-hidden="true" />
+=======
+                    class="group relative flex w-full justify-center rounded-md bg-celadon px-3 py-2 text-sm font-semibold text-dark-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  >
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                      <LockClosedIcon class="h-5 w-5 text-dark-green" aria-hidden="true" />
+>>>>>>> Stashed changes
                     </span>
                     Sign in
                   </button>
