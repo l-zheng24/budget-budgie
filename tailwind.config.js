@@ -14,6 +14,7 @@ module.exports = {
       'cadet-grey': '#8aa1b1',
       'sunglow': '#ffcb47',
       'cosmicLatte': '#FFFBEC',
+      
     
     },},
     
