@@ -5,22 +5,87 @@ function Dashboard() {
     return (
       <React.Fragment>
       <section>
-        <div class='w-screen h-screen grid grid-rows-2 text-white text-4xl md:grid-cols-2'>
-            <div class= ' w-full h-full bg-celadon centered md:h-screen border-4'>
-              <h class="font-bold flex justify-center text-gray-800">Meal Plan</h>
-              <p class= " m-10  text-gray-800">Dollars Left: </p>
-              <p class = " m-10 text-gray-800">Swipes left:</p>
-              <div class = "flex w-full flex-col gap-4">
-                <Progress value={50} color="blue" /> 
-              </div>
+        
+        <nav class="bg-celadon w-full h-20 rounded-md">
+          <ol class="list-reset flex space-x-16 pt-3">
+            <li>
+
+            </li>
+            <li >
+              <a
+                href="#"
+                class="mr-2 text-4xl  rounded-md text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600 bg-light-blue"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="mr-2 text-4xl rounded-md text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600 bg-light-blue"
+                >Dining Dollars</a
+              >
+            </li>
+            <a
+                href="#"
+                class="mr-2 text-4xl  rounded-md text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 active:text-primary-700 dark:text-primary-400 dark:hover:text-primary-500 dark:focus:text-primary-500 dark:active:text-primary-600 bg-light-blue"
+                >Dining Dollars</a
+              >
+          </ol>
+        </nav>
+
+        <div class='w-screen h-screen grid text-white text-4xl md:grid-cols-2'>
               
-            </div> 
-  
-            {/* page 2 */}
-            <div class='w-full h-full bg-sunglow centered md:h-screen border-4'>
-            <h class = "font-bold flex justify-center text-gray-800">Real Money</h>
-           
-            </div>
+              
+              <div class="flex justify-center pt-20 ">
+
+                
+                
+                
+                <div
+                  class="flex flex-col rounded-lg bg-white shadow-lg dark:bg-dark-green w-5/6 h-4/5 flex">
+                  <div class="flex flex-col justify-start p-6 flex">
+                    <h5
+                      class="mb-2 text-4xl font-medium text-dark-green  bg-sunglow rounded-md">
+                      Dining Dollars
+                    </h5>
+                    <p class="mb-4 text-3xl  text-neutral-600 dark:text-neutral-200 pt-10">
+                      Dining Dollars spent this month:
+                    </p>
+                    <p class="mb-4 text-3xl  text-neutral-600 dark:text-neutral-200 pt-10">
+                      Dining Dollars spent this semester:
+                    </p>
+                    <p class="mb-4 text-3xl  text-neutral-600 dark:text-neutral-200 pt-10">
+                      Dining Dollars spent this week:
+                    </p>
+                  </div>
+                </div>
+
+              </div>  
+            
+            
+          
+            <div class="flex justify-center pt-20 ">
+              <div
+                class="flex flex-col rounded-lg bg-white shadow-lg dark:bg-dark-green w-5/6 h-4/5 flex ">
+                <div class="flex flex-col justify-start p-6">
+                  <h5
+                    class="mb-2 text-4xl font-medium text-dark-green  bg-sunglow rounded-md">
+                    Real Money
+                  </h5>
+                  <p class="mb-4 text-3xl  text-neutral-600 dark:text-neutral-200 pt-10">
+                      Amount spent this month:
+                    </p>
+                    <p class="mb-4 text-3xl  text-neutral-600 dark:text-neutral-200 pt-10">
+                      Amount spent this semester:
+                    </p>
+                    <p class="mb-4 text-3xl  text-neutral-600 dark:text-neutral-200 pt-10">
+                      Amount spent this week:
+                    </p>
+                </div>
+              </div>
+            </div>  
+            
+
         </div>
       </section>
     </React.Fragment>
