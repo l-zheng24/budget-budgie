@@ -6,6 +6,8 @@ __pycache__/
 # C extensions
 *.so
 
+react_bird/
+
 # Distribution / packaging
 .Python
 build/
