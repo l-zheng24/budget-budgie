@@ -5,7 +5,17 @@ module.exports = {
   ],
   theme: {
 
-    extend: {},
+    extend: {colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'dark-green': '#122b09',
+      'celadon': '#b9d8c2',
+      'light-blue': '#9ac2c9',
+      'cadet-grey': '#8aa1b1',
+      'sunglow': '#ffcb47',
+    
+    },},
+    
     
   },
   plugins: [

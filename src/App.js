@@ -3,6 +3,8 @@ import './App.css';
 import { LockClosedIcon } from '@heroicons/react/20/solid'
 import Login from './components/Login'
 import Dashboard from './components/Dashboard'
+import MealPlan from './components/MealPlan'
+import RealMoney from './components/RealMoney'
 import {
   BrowserRouter,
   Routes,
@@ -16,6 +18,8 @@ function App() {
         <Routes>
             <Route path="/" element={<Login/>} />
             <Route path="/dashboard" element={<Dashboard/>} />
+            <Route path="/mealplan" element={<MealPlan/>} />
+            <Route path="/realmoney" element={<RealMoney/>} />
         </Routes>
       </BrowserRouter>
   );
