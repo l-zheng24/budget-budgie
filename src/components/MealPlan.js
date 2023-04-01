@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 
 function MealPlan() {
     return (
-      <div></div>
+      <div>
+        
+      </div>
     );
   }
 

@@ -42,8 +42,8 @@ function Dashboard() {
                 
                 
                 <div
-                  class="flex flex-col rounded-lg bg-white shadow-lg dark:bg-dark-green w-5/6 h-4/5 flex">
-                  <div class="flex flex-col justify-start p-6 flex">
+                  class=" flex-col rounded-lg bg-white shadow-lg dark:bg-dark-green w-5/6 h-4/5 flex">
+                  <div class=" flex-col justify-start p-6 flex">
                     <h5
                       class="mb-2 text-4xl font-medium text-dark-green  bg-sunglow rounded-md">
                       Dining Dollars
