@@ -78,7 +78,7 @@ function Login() {
         <div class="flex min-h-full items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
             <div class="w-full max-w-md space-y-8">
               <div>
-              <h2 class="text-dark-green font-extrabold text-center text-3xl">
+              <h2 class="text-dark-green font-semibold text-center text-4xl mb-6">
               Budget Budgie
             </h2>
                 <img
@@ -86,7 +86,7 @@ function Login() {
                   src = {require('../budgie.png')} height={500} width={500}
                   alt = "Your Company"
                 />
-                <h2 class="mt-6 text-center text-3xl font-bold tracking-tight text-dark-green">
+                <h2 class="mt-6 text-center text-2xl font-medium tracking-tight text-dark-green">
                   Sign in to your W&M account
                 </h2>
                 
@@ -129,6 +129,7 @@ function Login() {
                   <button
                     type="submit"
                     class="group relative flex w-full justify-center rounded-md bg-celadon px-3 py-2 text-sm font-semibold text-dark-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    onClick={getData}
                   >
                     <span class="absolute inset-y-0 left-0 flex items-center pl-3">
                       <LockClosedIcon class="h-5 w-5 text-dark-green" aria-hidden="true" />
