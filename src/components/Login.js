@@ -39,11 +39,11 @@ function Login() {
   }
 
     return (
-        <body class="min-h-screen bg-slate-100">
+        <body class="min-h-full bg-slate-100">
         <div class="flex min-h-full items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
             <div class="w-full max-w-md space-y-8">
               <div>
-              <h2 class="text-dark-green font-semibold text-center text-4xl mb-6">
+              <h2 class=" text-dark-green font-semibold text-center text-4xl mb-6">
               Budget Budgie
             </h2>
                 <img

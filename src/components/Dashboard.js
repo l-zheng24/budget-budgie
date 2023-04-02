@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Progress } from "@material-tailwind/react";
+import React from "react";
 
 function Dashboard() {
   return (
@@ -60,6 +59,15 @@ function Dashboard() {
                 <p className="mb-4 text-3xl  text-neutral-200 pt-10">
                   Amount spent this week:
                 </p>
+                <div class="w-full text-2xl bg-slate-100 text-dark-green rounded-md  p-2  h-1/4 inline">
+                  test
+                </div>
+                <div
+                  class="m-3 mb-4 rounded-lg bg-emerald-800 py-2 px-4 text-base text-danger-700 text-center"
+                  role="alert"
+                >
+                  Your current budget is: {localStorage.getItem("budget")}
+                </div>
               </div>
             </div>
           </div>

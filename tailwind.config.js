@@ -10,7 +10,7 @@ module.exports = {
       current: 'currentColor',
       'dark-green': '#122b09',
       'celadon': '#b9d8c2',
-      'light-blue': '#9ac2c9',
+      'light-blue': '#c9e4e9',
       'cadet-grey': '#8aa1b1',
       'sunglow': '#FFE483',
       'cosmicLatte': '#FFFBEC',
