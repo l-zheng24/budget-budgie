@@ -6,12 +6,14 @@ app = Flask(__name__)
 
 @app.route('/', methods = ['GET','POST'])
 def getInformation():
-    if request.data and request.method == 'POST':
-        data = request.get_json()
-        username = data["username"]
-        password = data["password"]
-        return cbordScraper.obtain_info(username, password)
-    else: return "Failed" 
+    # if request.data and request.method == 'POST':
+    #     data = request.get_json()
+    #     username = data["username"]
+    #     password = data["password"]
+    username = "msierzega"
+    password = "puFFins2()@w473r"
+    return cbordScraper.obtain_info(username, password)
+    # else: return "Failed" 
 
 cors = CORS(app, resources={'/*':{'origins': 'http://localhost:3000'}})
 

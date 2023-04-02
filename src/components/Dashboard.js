@@ -58,7 +58,8 @@ function Dashboard() {
                   class="mx-24 m-3 mb-4 rounded-lg bg-emerald-800 py-2 text-base text-danger-700 text-center"
                   role="alert"
                 >
-                  Your current budget is: {localStorage.getItem("budget")} per month
+                  Your current budget is: {localStorage.getItem("budget")} per
+                  month
                 </div>
               </div>
             </div>

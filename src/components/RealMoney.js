@@ -39,8 +39,8 @@ function RealMoney() {
   return (
     <section class="min-h-screen bg-slate-100">
       <div class="pl-16 grid grid-cols-2">
-        <div class="h-full w-4/5 inline-block mt-12">
-          <h2 class=" mb-2 text-4xl font-medium leading-tight text-primary mt-5 bg-amber-200   rounded-md w-3/5 p-2 ">
+        <div class="h-full w-4/5 inline-block">
+          <h2 class=" underline mb-2 text-4xl font-medium leading-tight text-primary mt-5  rounded-md w-3/5 p-2 ">
             {" "}
             Receipt History{" "}
           </h2>
@@ -81,7 +81,7 @@ function RealMoney() {
           />
           <button
             type="button"
-            class="m-2 inline-block bg-celadon rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-gray-800 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+            class="m-2 inline-block bg-amber-200 rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-gray-800 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
             data-te-ripple-init
             data-te-ripple-color="light"
             onClick={processReceipt}
@@ -91,8 +91,8 @@ function RealMoney() {
           Total amount of submitted item:
         </div>
 
-        <div class="h-full w-4/5 inline-block mt-12">
-          <h2 class="mb-2 text-4xl font-medium leading-tight text-primary mt-5 bg-amber-200 rounded-md w-2/5 p-2 ">
+        <div class="h-full w-4/5 inline-block">
+          <h2 class="underline mb-2 text-4xl font-medium leading-tight text-primary mt-5 rounded-md w-2/5 p-2 ">
             {" "}
             Budget{" "}
           </h2>
@@ -120,7 +120,7 @@ function RealMoney() {
 
               <button
                 type="button"
-                class="inline-block bg-celadon rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-gray-800 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+                class="inline-block bg-amber-200 rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-gray-800 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
                 data-te-ripple-init
                 data-te-ripple-color="light"
                 onClick={changeBudget}
