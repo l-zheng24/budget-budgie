@@ -5,7 +5,9 @@ function MealPlan() {
   function money_round(num) {
     return Math.ceil(num * 100) / 100;
   }
-  const [dollars, setDollars] = useState(250);
+  const [dollars, setDollars] = useState(
+    localStorage.getItem("SpringDiningDollars")
+  );
   const [dollarsPerMonth, setDollarsPerMonth] = useState("$0");
   useEffect(() => {
     const date1 = new Date();
@@ -34,13 +36,14 @@ function MealPlan() {
                 </h5>
                 <p class="m-4 text-3xl  text-dark-green">Remaining Swipes:</p>
                 <div class="w-full text-2xl bg-slate-100 text-dark-green rounded-md  p-2  h-1/4 inline">
-                  test
+                  {localStorage.getItem("Swipes")}
                 </div>
                 <p class="m-4 text-3xl  text-dark-green">
-                  Meals swipes used this semester:
+                  Meals swipes used this month:
                 </p>
                 <div class="w-full text-2xl bg-slate-100 text-dark-green rounded-md  p-2  h-1/4 inline">
-                  test
+                  {parseInt(localStorage.getItem("MonthStartSwipes")) -
+                    parseInt(localStorage.getItem("MonthEndSwipes"))}
                 </div>
               </div>
             </div>
@@ -51,17 +54,9 @@ function MealPlan() {
                 <h5 class="mb-2 text-4xl font-medium text-dark-green  bg-amber-200 p-3 rounded-md">
                   Dining Dollars
                 </h5>
-                <p class="m-4 text-3xl  text-dark-green">
-                  Remaining Dollars: ${dollars}
-                </p>
+                <p class="m-4 text-3xl  text-dark-green">Remaining Dollars:</p>
                 <div class="w-full text-2xl bg-slate-100 text-dark-green rounded-md  p-2  h-1/4 inline">
-                  test
-                </div>
-                <p class="m-4 text-3xl  text-dark-green">
-                  Total Amount used this semester:
-                </p>
-                <div class="w-full text-2xl bg-slate-100 text-dark-green rounded-md  p-2  h-1/4 inline">
-                  test
+                  ${dollars}
                 </div>
               </div>
               <div
@@ -81,7 +76,7 @@ function MealPlan() {
                 </h5>
                 <p class="m-4 text-3xl  text-dark-green">Current Balance:</p>
                 <div class="w-full text-2xl bg-slate-100 text-dark-green rounded-md  p-2  h-1/4 inline">
-                  test
+                  ${localStorage.getItem("express")}
                 </div>
               </div>
             </div>

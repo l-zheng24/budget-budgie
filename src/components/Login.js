@@ -13,14 +13,14 @@ function Login() {
     event.preventDefault();
     axios({
       method: "POST",
-      mode: 'no-cors',
+      mode: "no-cors",
       crossDomain: true,
-      url:"http://127.0.0.1:5000",
-      data: JSON.stringify(inputs)
+      url: "http://127.0.0.1:5000",
+      data: JSON.stringify(inputs),
     }).then((response) => {
-      navigate("/dashboard", { state: { id: response.data}})
+      navigate("/dashboard", { state: { id: response.data } });
       alert("You have successfully logged in!");
-    })
+    });
   }
 
   const handleChange = (event) => {

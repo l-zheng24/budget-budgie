@@ -5,6 +5,15 @@ function Dashboard() {
   const { state } = useLocation();
   const { id } = state;
   console.log(id);
+  localStorage.setItem("express", id["Express"]);
+  localStorage.setItem("MonthEndDining", id["MonthEndDining"]);
+  localStorage.setItem("MonthEndExpress", id["MonthEndExpress"]);
+  localStorage.setItem("MonthEndSwipes", id["MonthEndSwipes"]);
+  localStorage.setItem("MonthStartDining", id["MonthStartDining"]);
+  localStorage.setItem("MonthStartExpress", id["MonthStartExpress"]);
+  localStorage.setItem("MonthStartSwipes", id["MonthStartSwipes"]);
+  localStorage.setItem("SpringDiningDollars", id["Spring Dining Dollars"]);
+  localStorage.setItem("Swipes", id["Swipes"]);
 
   return (
     <React.Fragment>
