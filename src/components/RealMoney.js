@@ -39,7 +39,7 @@ function RealMoney() {
   return (
     <section class="min-h-screen bg-slate-100">
       <div class="pl-16 grid grid-cols-2">
-        <div class="h-full w-4/5 inline-block">
+        <div class="h-full w-4/5 inline-block mt-12">
           <h2 class=" mb-2 text-4xl font-medium leading-tight text-primary mt-5 bg-amber-200   rounded-md w-3/5 p-2 ">
             {" "}
             Receipt History{" "}
@@ -91,8 +91,8 @@ function RealMoney() {
           Total amount of submitted item:
         </div>
 
-        <div class="h-full w-4/5 inline-block">
-          <h2 class="mt-0 mb-2 text-4xl font-medium leading-tight text-primary mt-5 bg-amber-200 rounded-md w-2/5 p-2 ">
+        <div class="h-full w-4/5 inline-block mt-12">
+          <h2 class="mb-2 text-4xl font-medium leading-tight text-primary mt-5 bg-amber-200 rounded-md w-2/5 p-2 ">
             {" "}
             Budget{" "}
           </h2>
