@@ -25,5 +25,7 @@ def after_request(response):
     response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS')
     return response
 
+
+
 if __name__ == "__main__":
     app.run()
