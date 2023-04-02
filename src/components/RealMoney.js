@@ -1,12 +1,43 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function RealMoney() {
+    const [budget, setBudget] = useState("$0");
+    const [displayBudget, setDisplayBudget] = useState("$0");
+
+    const handleBudgetChange = event =>{
+
+    if(event.target.value[0] == "$"){
+        // localStorage.setItem("budget", event.target.value);
+        // console.log("HELLLO", localStorage.getItem("budget"));
+        setBudget(event.target.value);
+    } 
+    else{
+        // localStorage.setItem("budget", "$" + event.target.value);
+        setBudget("$" + event.target.value)
+    }
+    
+
+    };
+    
+    const changeBudget = () => {
+        setDisplayBudget(budget);
+        console.log("budget", budget);
+        localStorage.setItem("budget", budget);
+      };
+
+      useEffect(() => {
+        if(localStorage.getItem("budget")){
+            setDisplayBudget(localStorage.getItem("budget"));
+        }
+        
+      },[]);
+    
   return (
     <section class="min-h-screen bg-slate-100">
       
       <div class="pl-16 grid grid-cols-2">
         <div class="h-full w-4/5 inline-block">
-          <h2 class="mt-0 mb-2 text-4xl font-medium leading-tight text-primary mt-5 bg-amber-200   rounded-md w-3/5 p-2 ">
+          <h2 class=" mb-2 text-4xl font-medium leading-tight text-primary mt-5 bg-amber-200   rounded-md w-3/5 p-2 ">
             {" "}
             Receipt History{" "}
           </h2>
@@ -65,7 +96,7 @@ function RealMoney() {
                 Current budget (per/month):
               </p>
               <div class="w-full text-2xl bg-slate-100 text-dark-green rounded-md  p-2  h-3/4 inline">
-                $200
+                {localStorage.getItem("budget") ? localStorage.getItem("budget"): budget}
               </div>
               <p class="mb-4 text-3xl text-dark-green pt-3">
                 Enter new budget:
@@ -75,6 +106,7 @@ function RealMoney() {
                 type="text"
                 class="block mb-2 text-2xl font-medium text-dark-green rounded-md bg-slate-100"
                 id="exampleFormControlInput1"
+                onChange={handleBudgetChange}
                 placeholder="Enter budget here.."
               />
 
@@ -83,6 +115,7 @@ function RealMoney() {
                 class="inline-block bg-celadon rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-gray-800 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
                 data-te-ripple-init
                 data-te-ripple-color="light"
+                onClick={changeBudget}
               >
                 Set new budget
               </button>

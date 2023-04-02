@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Progress } from "@material-tailwind/react"
 
 function Dashboard() {
+  
     return (
       <React.Fragment>
       <section class="bg-slate-100">
