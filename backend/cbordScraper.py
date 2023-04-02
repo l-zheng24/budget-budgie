@@ -19,8 +19,7 @@ def obtain_info(username, password):
     options = Options()
     options.add_argument("headless")
     options.add_argument("--log-level=3")
-    service = Service("chromedriver.exe")
-    driver = webdriver.Chrome(service=service, options=options)
+    driver = webdriver.Chrome(executable_path='/Users/lenazheng/Downloads/chromedriver_mac64/chromedriver', options=options)
 
     driver.get("https://tribecard.wm.edu/login/cas.php")
 
@@ -43,16 +42,16 @@ def obtain_info(username, password):
 
     for row in tbody.find_elements(By.XPATH, './tr'):
         ta = row.find_element(By.XPATH, './th').find_element(By.XPATH, './a')
-        name = ta.accessible_name
+        name = ta.text
         td = row.find_element(By.XPATH, './td')
-        value = td.accessible_name.replace("$", "")
+        value = td.text.replace("$", "")
 
         valueDict[name] = value
 
 
     # print(valueDict)
 
-    mealSwipes = driver.find_element(By.XPATH, '//*[@id="divContent"]/table[2]/tbody/tr/td[2]/div/table[2]/tbody/tr/td').accessible_name
+    mealSwipes = driver.find_element(By.XPATH, '//*[@id="divContent"]/table[2]/tbody/tr/td[2]/div/table[2]/tbody/tr/td').text
 
     valueDict["Swipes"] = mealSwipes
 

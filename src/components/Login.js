@@ -18,17 +18,17 @@ function Login() {
       url:"http://127.0.0.1:5000",
       body: JSON.stringify(inputs)
     })
-    .then((response) => response.json)
-      .then((result) => {
-        try {
-          if (result.message === "Success") {
-            alert("You have successfully logged in!");
-            navigate("/dashboard")
-          }
-        } catch (error) {
-          console.log(error)
+    .then((response) => {
+      console.log(response.status);
+      alert("You have successfully logged in!");
+      navigate("/dashboard")
+      return response.json().then(json => {
+        if (!response.ok) {
+          return Promise.reject(response);
         }
+        return json;
       })
+    })
   }
 
   const handleChange = (event) => {
@@ -37,41 +37,6 @@ function Login() {
     const value = event.target.value;
     setInputs(values => ({...values, [name]: value}))
   }
-
-  // function handleClick(event) {
-  //   event.preventDefault();
-  //   let options = {
-  //     method: 'POST',
-  //     mode: 'no-cors',
-  //     headers : { 
-  //       'Content-Type': 'multipart/form-data'}, 
-  //     // body: new FormData(),
-  //     body: JSON.stringify(inputs)
-  //   };
-
-  //   fetch('http://127.0.0.1:5000', options) 
-  //     .then((response) => response.json())
-  //     .then((result) => {
-  //       if (result.message === "Success") {
-  //         alert("You have successfully logged in!");
-  //         navigate("/dashboard")
-  //       }
-  //     });
-  // }
-
-  // const LoginForm = () => {
-  //   const usernameRef = React.useRef();
-  //   const passwordRef = React.useRef();
-
-  //   const handleSubmit = (event) => {
-  //     event.preventDefault();
-
-  //     const username = usernameRef.current.value
-  //     const password = passwordRef.current.value
-
-  //     alert(username + ' ' + password);
-  //   }
-  // };
 
     return (
         <body class="min-h-full bg-slate-100">
@@ -125,7 +90,6 @@ function Login() {
                     />
                   </div>
                 </div>
-                <div>
                   <button
                     type="submit"
                     class="group relative flex w-full justify-center rounded-md bg-celadon px-3 py-2 text-sm font-semibold text-dark-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
@@ -136,7 +100,6 @@ function Login() {
                     </span>
                     Sign in
                   </button>
-                </div>
               </form>
             </div>
           </div>
