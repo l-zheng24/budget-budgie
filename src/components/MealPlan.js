@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
 
 function MealPlan() {
   function money_round(num) {
@@ -23,7 +22,7 @@ function MealPlan() {
             Math.floor(Math.floor((date2 - date1) / (1000 * 60 * 60 * 24)) / 7)
         )
     );
-  }, []);
+  }, [dollars]);
   return (
     <React.Fragment>
       <section class="bg-slate-100">

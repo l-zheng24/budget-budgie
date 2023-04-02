@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 function Dashboard() {
   const { state } = useLocation();
   const { id } = state;
-  console.log(id);
+  // console.log(id);
   localStorage.setItem("express", id["Express"]);
   localStorage.setItem("MonthEndDining", id["MonthEndDining"]);
   localStorage.setItem("MonthEndExpress", id["MonthEndExpress"]);
