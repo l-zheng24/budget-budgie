@@ -14,20 +14,14 @@ function Dashboard() {
                 <h5 class="mx-2 mb-2 text-4xl font-medium text-dark-green  bg-amber-200 p-3 rounded-md">
                   Dining Dollars
                 </h5>
-                <p class="px-3 mb-4 text-3xl  text-dark-green pt-3">
-                  Dining Dollars spent this month:
-                </p>
-                <div class="text-2xl bg-slate-100 text-dark-green rounded-md mx-2 p-2 px-4 h-1/4">
-                  test
-                </div>
-                <p class="px-3 my-4 text-3xl  text-dark-green">
-                  Dining Dollars spent this semester:
+                <p class="mb-4 text-3xl  text-dark-green pt-3">
+                  Dining Dollars Remaining:
                 </p>
                 <div class="text-2xl bg-slate-100 text-dark-green rounded-md mx-2 p-2 px-4 h-1/4 inline">
                   test
                 </div>
-                <p class="px-3 my-4 text-3xl  text-dark-green">
-                  Dining Dollars spent this week:
+                <p class=" my-4 text-3xl  text-dark-green">
+                  Dining Dollars Spent This Week:
                 </p>
                 <div class="text-2xl bg-slate-100 text-dark-green rounded-md mx-2 p-2 px-4 h-1/4 inline">
                   test
