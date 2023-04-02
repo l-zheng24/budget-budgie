@@ -12,6 +12,7 @@ export function NavBar() {
           </li>
         </a>
         <a className="links text-slate-900" href="/mealplan">
+        
           <li className="inline-flex flex-row m-[0.7rem] mx-6 hover:underline hover:scale-105 delay-50 decoration-emerald-800 transition">
             {" "}
             Meal Plan{" "}

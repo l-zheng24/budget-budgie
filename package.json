@@ -21,6 +21,8 @@
     "react-scripts": "5.0.1",
     "react-sticky-nav": "^4.0.6",
     "react-view": "^2.3.7",
+    "rxjs": "^7.8.0",
+    "state-pool": "^0.9.0",
     "url": "^0.11.0",
     "web-vitals": "^2.1.4"
   },

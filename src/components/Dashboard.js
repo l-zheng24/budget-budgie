@@ -15,6 +15,9 @@ function Dashboard() {
   localStorage.setItem("SpringDiningDollars", id["Spring Dining Dollars"]);
   localStorage.setItem("Swipes", id["Swipes"]);
 
+
+
+
   return (
     <React.Fragment>
       <section class="bg-slate-100">
@@ -32,13 +35,15 @@ function Dashboard() {
                   Dining Dollars Remaining:
                 </p>
                 <div class="text-2xl bg-slate-100 text-dark-green rounded-md mx-2 p-2 px-4 h-1/4 inline">
-                  test
+                  ${ localStorage.getItem("MonthEndDining")}
+
                 </div>
                 <p class=" my-4 text-3xl  text-dark-green">
-                  Dining Dollars Spent This Week:
+                  Dining Dollars Spent This Month:
                 </p>
                 <div class="text-2xl bg-slate-100 text-dark-green rounded-md mx-2 p-2 px-4 h-1/4 inline">
-                  test
+                  ${parseInt(localStorage.getItem("MonthStartSwipes")) -
+                    parseInt(localStorage.getItem("MonthEndSwipes"))}
                 </div>
               </div>
             </div>
@@ -54,13 +59,13 @@ function Dashboard() {
                   Amount spent this month:
                 </p>
                 <div class="text-2xl bg-slate-100 text-dark-green rounded-md mx-2 p-2 px-4 h-1/4 inline">
-                  test
+                  Input #1
                 </div>
                 <p class="px-3 my-4 text-3xl text-dark-green">
                   Amount spent this semester:
                 </p>
                 <div class="text-2xl bg-slate-100 text-dark-green rounded-md mx-2 p-2 px-4 h-1/4 inline">
-                  test
+                  Input #2
                 </div>
                 <p class="px-3 my-4 text-3xl text-dark-green">
                   Amount spent this week:

@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
+import globalVar from "./globalVar";
 
 function RealMoney() {
   const [budget, setBudget] = useState("$0");
   const [displayBudget, setDisplayBudget] = useState("$0");
   const [filename, setFilename] = useState("");
 
+  console.log(globalVar.value);
+  
   const handleBudgetChange = (event) => {
     if (event.target.value[0] == "$") {
       // localStorage.setItem("budget", event.target.value);
