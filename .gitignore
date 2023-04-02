@@ -137,3 +137,4 @@ node_modules
 backend/venv
 backend/__pycache__
 backend/cypher/Scripts
+backend/cbordScraper.py

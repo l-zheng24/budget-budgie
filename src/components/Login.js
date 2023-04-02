@@ -13,20 +13,14 @@ function Login() {
     event.preventDefault();
     axios({
       method: "POST",
-      mode: "no-cors",
-      url: "http://127.0.0.1:5000",
-      body: JSON.stringify(inputs),
+      mode: 'no-cors',
+      crossDomain: true,
+      url:"http://127.0.0.1:5000",
+      data: JSON.stringify(inputs)
     }).then((response) => {
-      console.log(response.status);
+      navigate("/dashboard", { state: { id: response.data}})
       alert("You have successfully logged in!");
-      navigate("/dashboard");
-      return response.json().then((json) => {
-        if (!response.ok) {
-          return Promise.reject(response);
-        }
-        return json;
-      });
-    });
+    })
   }
 
   const handleChange = (event) => {

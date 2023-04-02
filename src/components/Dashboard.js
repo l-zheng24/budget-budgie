@@ -1,6 +1,12 @@
 import React from "react";
+import {useLocation} from 'react-router-dom'
 
 function Dashboard() {
+
+  const { state } = useLocation(); 
+  const { id } = state;
+  // console.log(id)
+  
   return (
     <React.Fragment>
       <section class="bg-slate-100">
