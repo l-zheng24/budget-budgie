@@ -139,5 +139,5 @@ backend/__pycache__
 backend/cypher
 backend/cbordScraper.py
 backend/chromedriver.exe
-/react_bird
-/new_env
+react_bird
+new_env
