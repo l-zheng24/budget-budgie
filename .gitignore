@@ -136,5 +136,8 @@ node_modules
 # backend
 backend/venv
 backend/__pycache__
-backend/cypher/Scripts
+backend/cypher
 backend/cbordScraper.py
+backend/chromedriver.exe
+/react_bird
+/new_env
